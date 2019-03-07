@@ -1,0 +1,26 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<style>
+body{background-image:url('https://i.pinimg.com/originals/c3/d5/b2/c3d5b2a3f1e7733d15e7face3e6d1caa.jpg'); background-repeat: no-repeat; background-size: 100% 100%;}
+</style>
+<body>
+  <br>
+<div class="alert alert-dark" role="alert">
+ <h1><p style="font-weight:bold; color:hsl(32, 100%, 50%);">Blog 새로만들어봅시다!!</p></h1>
+</div>
+ <br>
+ <div class="alert alert-light" role="alert">
+ <h1>제목:안녕하세요{{blog.title}}</h1><span class="badge badge-secondary">New</span></h2>
+ <p>작성날짜:2018.03.06{{blog.pub_date}}</p>
+ <p>본문 미리보기:눈누난나{{blog.summary}} <a href="{url 'detail' blog.id}">...more</a></p>
+ </div>
+ <div class="alert alert-info" role="alert">
+  <h1>제목:짜잔{{blog.title}}</h1><span class="badge badge-secondary">New</span></h2>
+  <p>작성날짜:새로운 내용{{blog.pub_date}}</p>
+  <p>본문 미리보기:내용을 받아와요{{blog.summary}} <a href="{url 'detail' blog.id}">...more</a></p>
+  </div>
+ </body>

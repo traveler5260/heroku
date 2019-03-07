@@ -1,0 +1,11 @@
+<body>
+    {%for Blog in blogs.all%}
+     <h1>제목:{{Blog.title}}</h1>
+     <p>날짜: {{Blog.pub_date}}</p>
+     <p>본문 미리보기: {{Blog.summary}}</p>
+     <br><br>
+   {%endfor%}
+   </body>
+   
+   </html>
+   
